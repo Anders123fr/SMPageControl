@@ -18,7 +18,6 @@
 		3D8496D2162A4849001ECE62 /* currentSearchDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8496D0162A4849001ECE62 /* currentSearchDot@2x.png */; };
 		3D8496D3162A4849001ECE62 /* searchDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8496D1162A4849001ECE62 /* searchDot@2x.png */; };
 		3D8496D7162A4911001ECE62 /* retro_intro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8496D6162A4911001ECE62 /* retro_intro@2x.png */; };
-		3D8496DE162A73A5001ECE62 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8496DD162A73A5001ECE62 /* SMPageControl.m */; };
 		3D9CDA921629EA9100B95512 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9CDA911629EA9100B95512 /* UIKit.framework */; };
 		3D9CDA941629EA9100B95512 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9CDA931629EA9100B95512 /* Foundation.framework */; };
 		3D9CDA961629EA9100B95512 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9CDA951629EA9100B95512 /* CoreGraphics.framework */; };
@@ -31,7 +30,36 @@
 		3D9CDAAB1629EA9100B95512 /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CDAAA1629EA9100B95512 /* SMViewController.m */; };
 		3D9CDAAE1629EA9100B95512 /* SMViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9CDAAC1629EA9100B95512 /* SMViewController_iPhone.xib */; };
 		3D9CDAB11629EA9100B95512 /* SMViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9CDAAF1629EA9100B95512 /* SMViewController_iPad.xib */; };
+		9A6C9FBA1DC7490000133BF7 /* SMPageControlFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A6C9FB81DC7490000133BF7 /* SMPageControlFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A6C9FBD1DC7490000133BF7 /* SMPageControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C9FB61DC748FF00133BF7 /* SMPageControl.framework */; };
+		9A6C9FBE1DC7490000133BF7 /* SMPageControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6C9FB61DC748FF00133BF7 /* SMPageControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A6C9FC31DC7493A00133BF7 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8496DD162A73A5001ECE62 /* SMPageControl.m */; };
+		9A6C9FC41DC7494A00133BF7 /* SMPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8496DC162A73A5001ECE62 /* SMPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A6C9FBB1DC7490000133BF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9CDA841629EA9100B95512 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A6C9FB51DC748FF00133BF7;
+			remoteInfo = SMPageControlFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A6C9FC21DC7490000133BF7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9A6C9FBE1DC7490000133BF7 /* SMPageControl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D25A7FC162E7376007CD2A8 /* appleMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appleMask.png; sourceTree = "<group>"; };
@@ -47,7 +75,7 @@
 		3D8496D6162A4911001ECE62 /* retro_intro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retro_intro@2x.png"; sourceTree = "<group>"; };
 		3D8496DC162A73A5001ECE62 /* SMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMPageControl.h; path = ../../SMPageControl.h; sourceTree = "<group>"; };
 		3D8496DD162A73A5001ECE62 /* SMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMPageControl.m; path = ../../SMPageControl.m; sourceTree = "<group>"; };
-		3D9CDA8D1629EA9100B95512 /* SMPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9CDA8D1629EA9100B95512 /* SMPageControl-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMPageControl-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9CDA911629EA9100B95512 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3D9CDA931629EA9100B95512 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3D9CDA951629EA9100B95512 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +92,9 @@
 		3D9CDAAA1629EA9100B95512 /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
 		3D9CDAAD1629EA9100B95512 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SMViewController_iPhone.xib; sourceTree = "<group>"; };
 		3D9CDAB01629EA9100B95512 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SMViewController_iPad.xib; sourceTree = "<group>"; };
+		9A6C9FB61DC748FF00133BF7 /* SMPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6C9FB81DC7490000133BF7 /* SMPageControlFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMPageControlFramework.h; sourceTree = "<group>"; };
+		9A6C9FB91DC7490000133BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +102,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6C9FBD1DC7490000133BF7 /* SMPageControl.framework in Frameworks */,
 				3D9CDA921629EA9100B95512 /* UIKit.framework in Frameworks */,
 				3D9CDA941629EA9100B95512 /* Foundation.framework in Frameworks */,
 				3D9CDA961629EA9100B95512 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6C9FB21DC748FF00133BF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9CDA971629EA9100B95512 /* SMPageControl */,
+				9A6C9FB71DC7490000133BF7 /* SMPageControlFramework */,
 				3D9CDA901629EA9100B95512 /* Frameworks */,
 				3D9CDA8E1629EA9100B95512 /* Products */,
 			);
@@ -92,7 +132,8 @@
 		3D9CDA8E1629EA9100B95512 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D9CDA8D1629EA9100B95512 /* SMPageControl.app */,
+				3D9CDA8D1629EA9100B95512 /* SMPageControl-Demo.app */,
+				9A6C9FB61DC748FF00133BF7 /* SMPageControl.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,25 +189,66 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9A6C9FB71DC7490000133BF7 /* SMPageControlFramework */ = {
+			isa = PBXGroup;
+			children = (
+				9A6C9FB81DC7490000133BF7 /* SMPageControlFramework.h */,
+				9A6C9FB91DC7490000133BF7 /* Info.plist */,
+			);
+			path = SMPageControlFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9A6C9FB31DC748FF00133BF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6C9FBA1DC7490000133BF7 /* SMPageControlFramework.h in Headers */,
+				9A6C9FC41DC7494A00133BF7 /* SMPageControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		3D9CDA8C1629EA9100B95512 /* SMPageControl */ = {
+		3D9CDA8C1629EA9100B95512 /* SMPageControl-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D9CDAB41629EA9100B95512 /* Build configuration list for PBXNativeTarget "SMPageControl" */;
+			buildConfigurationList = 3D9CDAB41629EA9100B95512 /* Build configuration list for PBXNativeTarget "SMPageControl-Demo" */;
 			buildPhases = (
 				3D9CDA891629EA9100B95512 /* Sources */,
 				3D9CDA8A1629EA9100B95512 /* Frameworks */,
 				3D9CDA8B1629EA9100B95512 /* Resources */,
+				9A6C9FC21DC7490000133BF7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A6C9FBC1DC7490000133BF7 /* PBXTargetDependency */,
+			);
+			name = "SMPageControl-Demo";
+			productName = SMPageControl;
+			productReference = 3D9CDA8D1629EA9100B95512 /* SMPageControl-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A6C9FB51DC748FF00133BF7 /* SMPageControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A6C9FC11DC7490000133BF7 /* Build configuration list for PBXNativeTarget "SMPageControl" */;
+			buildPhases = (
+				9A6C9FB11DC748FF00133BF7 /* Sources */,
+				9A6C9FB21DC748FF00133BF7 /* Frameworks */,
+				9A6C9FB31DC748FF00133BF7 /* Headers */,
+				9A6C9FB41DC748FF00133BF7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SMPageControl;
-			productName = SMPageControl;
-			productReference = 3D9CDA8D1629EA9100B95512 /* SMPageControl.app */;
-			productType = "com.apple.product-type.application";
+			productName = SMPageControlFramework;
+			productReference = 9A6C9FB61DC748FF00133BF7 /* SMPageControl.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -177,6 +259,15 @@
 				CLASSPREFIX = SM;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Spaceman Labs";
+				TargetAttributes = {
+					3D9CDA8C1629EA9100B95512 = {
+						ProvisioningStyle = Automatic;
+					};
+					9A6C9FB51DC748FF00133BF7 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 3D9CDA871629EA9100B95512 /* Build configuration list for PBXProject "SMPageControl" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -190,7 +281,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D9CDA8C1629EA9100B95512 /* SMPageControl */,
+				9A6C9FB51DC748FF00133BF7 /* SMPageControl */,
+				3D9CDA8C1629EA9100B95512 /* SMPageControl-Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +312,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A6C9FB41DC748FF00133BF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -230,11 +329,26 @@
 				3D9CDA9E1629EA9100B95512 /* main.m in Sources */,
 				3D9CDAA21629EA9100B95512 /* SMAppDelegate.m in Sources */,
 				3D9CDAAB1629EA9100B95512 /* SMViewController.m in Sources */,
-				3D8496DE162A73A5001ECE62 /* SMPageControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6C9FB11DC748FF00133BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6C9FC31DC7493A00133BF7 /* SMPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A6C9FBC1DC7490000133BF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A6C9FB51DC748FF00133BF7 /* SMPageControl */;
+			targetProxy = 9A6C9FBB1DC7490000133BF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D9CDA9A1629EA9100B95512 /* InfoPlist.strings */ = {
@@ -319,9 +433,12 @@
 		3D9CDAB51629EA9100B95512 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMPageControl/SMPageControl-Prefix.pch";
 				INFOPLIST_FILE = "SMPageControl/SMPageControl-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -330,11 +447,101 @@
 		3D9CDAB61629EA9100B95512 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SMPageControl/SMPageControl-Prefix.pch";
 				INFOPLIST_FILE = "SMPageControl/SMPageControl-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9A6C9FBF1DC7490000133BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = SMPageControlFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IFTTT.SMPageControlFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A6C9FC01DC7490000133BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = SMPageControlFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IFTTT.SMPageControlFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -350,11 +557,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D9CDAB41629EA9100B95512 /* Build configuration list for PBXNativeTarget "SMPageControl" */ = {
+		3D9CDAB41629EA9100B95512 /* Build configuration list for PBXNativeTarget "SMPageControl-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D9CDAB51629EA9100B95512 /* Debug */,
 				3D9CDAB61629EA9100B95512 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A6C9FC11DC7490000133BF7 /* Build configuration list for PBXNativeTarget "SMPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A6C9FBF1DC7490000133BF7 /* Debug */,
+				9A6C9FC01DC7490000133BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
